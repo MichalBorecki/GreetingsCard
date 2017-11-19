@@ -1,70 +1,73 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity"
     android:background="@color/colorBackground"
     android:padding="5dp">
 
     <TextView
-        android:id="@+id/text_card_1"
-        android:text="@string/text_card_1"
+        android:text="@string/text_card_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
         android:fontFamily="casual"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:textColor="@color/colorText"/>
+        android:textColor="@color/colorText" />
 
     <LinearLayout
-        android:layout_below="@id/text_card_1"
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
 
         <LinearLayout
-            android:layout_below="@id/text_card_1"
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:padding="5dp">
 
             <ImageView
-                android:id="@+id/fot_1"
                 android:src="@drawable/fot1"
                 android:layout_alignParentLeft="true"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:scaleType="centerCrop"
                 android:layout_weight="1"/>
 
+            <TextView
+                android:text="@string/text_card_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:fontFamily="casual"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorText" />
+
             <ImageView
-                android:id="@+id/fot_3"
                 android:src="@drawable/fot3"
                 android:layout_alignParentLeft="true"
-                android:layout_below="@id/fot_1"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+
                 android:scaleType="centerCrop"
                 android:layout_weight="1"/>
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_below="@id/text_card_1"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:padding="5dp">
 
             <ImageView
-                android:id="@+id/fot_2"
                 android:src="@drawable/fot2"
                 android:layout_alignParentRight="true"
-                android:layout_below="@id/text_card_1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"/>
@@ -73,4 +76,6 @@
 
     </LinearLayout>
 
-</RelativeLayout>
+
+
+</LinearLayout>

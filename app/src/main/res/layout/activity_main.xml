@@ -12,11 +12,10 @@
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:scaleType="centerCrop"
-        android:layout_weight="1"
-        android:contentDescription="TODO" />
+        android:layout_weight="1"/>
 
     <TextView
-        android:text="@string/text_card_1"
+        android:text="@string/text_card_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
@@ -26,20 +25,27 @@
         android:textStyle="bold"/>
 
     <ImageView
+        android:src="@drawable/fot3"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:text="@string/text_card_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:fontFamily="casual"
+        android:textColor="@color/colorText"
+        android:textSize="15dp"
+        android:textStyle="bold"/>
+
+    <ImageView
         android:src="@drawable/fot2"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:scaleType="centerCrop"
-        android:layout_weight="2"
-        android:contentDescription="TODO" />
-
-    <ImageView
-        android:src="@drawable/fot3"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginTop="10dp"
-        android:scaleType="centerCrop"
-        android:layout_weight="1"
-        android:contentDescription="TODO" />
+        android:layout_weight="2" />
 
 </LinearLayout>
