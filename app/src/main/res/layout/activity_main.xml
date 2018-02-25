@@ -2,50 +2,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp"
     android:background="@color/colorBackground"
     android:orientation="vertical"
+    android:padding="@dimen/main_padding"
     tools:context=".MainActivity">
 
     <ImageView
-        android:src="@drawable/fot1"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
+        android:layout_weight="1"
         android:scaleType="centerCrop"
-        android:layout_weight="1"/>
+        android:src="@drawable/fot1" />
 
+    <!--Main Text-->
     <TextView
-        android:text="@string/text_card_2"
+        style="@style/mainText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:fontFamily="casual"
-        android:textColor="@color/colorText"
-        android:textSize="20dp"
-        android:textStyle="bold"/>
+        android:gravity="center"
+        android:text="@string/text_card_2" />
 
     <ImageView
-        android:src="@drawable/fot3"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
+        android:layout_weight="1"
         android:scaleType="centerCrop"
-        android:layout_weight="1"/>
+        android:src="@drawable/fot3" />
 
+    <!--Second text-->
     <TextView
-        android:text="@string/text_card_1"
+        style="@style/secondText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:fontFamily="casual"
-        android:textColor="@color/colorText"
-        android:textSize="15dp"
-        android:textStyle="bold"/>
+        android:gravity="center"
+        android:text="@string/text_card_1" />
 
     <ImageView
-        android:src="@drawable/fot2"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
+        android:layout_weight="2"
         android:scaleType="centerCrop"
-        android:layout_weight="2" />
+        android:src="@drawable/fot2" />
 
 </LinearLayout>

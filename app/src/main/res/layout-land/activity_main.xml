@@ -2,60 +2,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity"
     android:background="@color/colorBackground"
-    android:padding="5dp">
+    android:orientation="vertical"
+    android:padding="@dimen/main_padding_land"
+    tools:context=".MainActivity">
 
+    <!--Main text-->
     <TextView
-        android:text="@string/text_card_2"
+        style="@style/mainText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:fontFamily="casual"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:textColor="@color/colorText" />
+        android:gravity="center"
+        android:text="@string/text_card_2" />
 
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:orientation="horizontal">
 
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:padding="5dp">
+            android:orientation="vertical"
+            android:padding="@dimen/section_padding_land">
 
             <ImageView
-                android:src="@drawable/fot1"
-                android:layout_alignParentLeft="true"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="1"
                 android:scaleType="centerCrop"
-                android:layout_weight="1"/>
+                android:src="@drawable/fot1" />
 
+            <!--Second text-->
             <TextView
-                android:text="@string/text_card_1"
+                style="@style/secondText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:fontFamily="casual"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                android:textColor="@color/colorText" />
+                android:gravity="center"
+                android:text="@string/text_card_1" />
 
             <ImageView
-                android:src="@drawable/fot3"
-                android:layout_alignParentLeft="true"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
+                android:layout_alignParentLeft="true"
+                android:layout_weight="1"
                 android:scaleType="centerCrop"
-                android:layout_weight="1"/>
+                android:src="@drawable/fot3" />
 
         </LinearLayout>
 
@@ -63,19 +58,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:padding="5dp">
+            android:padding="@dimen/section_padding_land">
 
             <ImageView
-                android:src="@drawable/fot2"
-                android:layout_alignParentRight="true"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:scaleType="centerCrop"/>
+                android:layout_alignParentRight="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/fot2" />
 
         </LinearLayout>
 
     </LinearLayout>
-
-
 
 </LinearLayout>
